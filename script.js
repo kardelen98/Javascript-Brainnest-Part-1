@@ -62,7 +62,8 @@ function round(player, computer) {
     }
 }
 function game() {
-    for (let i = 0; i < 5; i++) {
+    for (let i = 1; i < 6; i++) {
+        alert(`Welcone to Game ${i}`);
         computerPlay();
         userPlay();
         console.log(round(userInput, compChoice));

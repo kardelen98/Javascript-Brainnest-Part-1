@@ -23,7 +23,6 @@ function userPlay() {
     // do {
     //     userInput = prompt("Rock, Paper or Scissors?");
     // } while (userInput != "rock"  userInput != "paper" || userInput != "scissors");
-
     userInput = prompt("Rock, Paper or Scissors?");
     userInput = userInput.toLowerCase();
 

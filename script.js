@@ -58,7 +58,18 @@ function round(player, computer) {
         return "what?";
     }
 }
-
-computerPlay();
-userPlay();
-console.log(round(userInput, compChoice));
+function game() {
+    for (let i = 0; i < 5; i++) {
+        computerPlay();
+        userPlay();
+        console.log(round(userInput, compChoice));
+    }
+    if (playerPoints > computerPoints) {
+        return "You win the game with: " + playerPoints + " points!";
+    } else if (computerPoints > playerPoints) {
+        return "Computer wins the game with " + computerPoints + " points!";
+    } else {
+        return "It's a tie with " + computerPoints + " points!";
+    }
+}
+console.log(game());

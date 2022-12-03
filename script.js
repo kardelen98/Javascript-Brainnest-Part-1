@@ -24,13 +24,20 @@ function userPlay() {
     userInput = userInput.toLowerCase();
     return userInput;
 }
+
 function round(player, computer) {
     //tie
     if (player == computer) {
         return "it's a tie";
     }
+    else if (player == "rock" && computer == "scissors") {
+        return "You win! Rock beats Scissors!";
+    }
+    else if (player == "scissors" && computer == "rock") {
+        return "You lose! Rock beats Scissors!";
 
-    //computer wins
+    }
+
 
     //player wins
 }
